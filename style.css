@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:wght@100;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.todoListInput {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 70%;
+  resize: none;
+  overflow: auto;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 20px;
+  transition: border-color 1s;
+}
+::placeholder {
+  text-align: center;
+  font-size: 20px;
+}
+.submitBtnDiv {
+  margin-top: 10px;
+}
+.addData,
+.clearData,
+.clearAllData {
+  margin: 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.5s;
+  transition: font-size 0.5s;
+}
+.addData:hover,
+.clearData:hover,
+.clearAllData:hover {
+  background-color: gray;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+.to-do-listData {
+  margin-top: 20px;
+  width: 1000px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.dustBin {
+  float: right;
+}
+.dateTime {
+  float: right;
+  opacity: 0.5;
+  margin-top: -15px;
+  padding-right: 10px;
+}
+.dustBin:hover {
+  color: red;
+  cursor: pointer;
+  transition: color 0.2s;
+}
